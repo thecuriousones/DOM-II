@@ -7,15 +7,12 @@ const lastImg = document.querySelector('.content-destination img')
 const mapImg = document.querySelector('.img-content')
 const wonkyHeader = document.querySelector('.content-destination h2')
 const secondPar = document.querySelector('.content-section p')
+const busImg = document.querySelector('.intro img')
 
 // Browser
 window.addEventListener('load', event => {
     alert('🤫FIND THE SECRET MESSAGE🤫')
 })
-
-// document.addEventListener('scroll', event => {
-//     alert('🥳THANKS FOR PLAYING🥳')
-// })
 
 // Nav
   nav.addEventListener('mouseover', event => {
@@ -74,18 +71,26 @@ secondPar.addEventListener('mousemove', event => {
 
 secondPar.addEventListener('mouseout', event => {
     event.target.textContent = 'Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Pretty simple traveling fun WordPress wanderlust darn simple organized.'
-    alert("What? Were you expecting another quippy message?? Well I dont feel like it click the 'y' key 😒")
+    alert("What? Were you expecting another quippy message?? Well I dont feel like it click the 'y' key😒")
 })
 
 // Hint 5
 document.addEventListener('keydown' , event => {
     if (event.key == 'y') {
-        alert('message ( ・・)つ')
+        alert("Your final hint is: message ( ・・)つ 🚨DONT PUT THE PIECES TOGETHER YET🚨 click the 'p' key")
     }
 })
 
 document.addEventListener('keyup' , event => {
-    if (event.key == 'y') {
-        alert("Wait wait hold on before you throw me into the river would you please click the 'enter' key 🙏🏾")
+    if (event.key == 'p') {
+        alert('🥁Annnndddd finally ladies and gents the secret message we were all waiting on isssss🥁')
+        alert('🥳🥳🥳THERE WAS NO SECRET MESSAGE 🥳🥳🥳')
+        alert("Wait wait hold on before you throw me into the river would you please click the bus image 🙏🏾")
     }
 })
+
+// Thanks for playing
+busImg.addEventListener('mousedown', event => {
+    alert('Thanks for playing °˖✧◝(⁰▿⁰)◜✧˖°')
+})
+
